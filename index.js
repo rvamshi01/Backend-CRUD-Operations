@@ -21,7 +21,7 @@ app.post("/post",async(req,res)=>{
 app.put("/:id",async(req,res)=>{
     const id= req.params.id;
     const {username,email,password}=req.body;
-    const user= await usermodel.findByIdAndUpdate(id,{username,email,password},{new:true});
+    const user= await usermodel.findByIdandUpdate(id,{username,email,password},{new:true});
     res.status(200).json(user)
 
 })
