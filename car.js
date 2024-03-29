@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose= require("mongoose");
 const app= express();
-const connection= require("./dbConnection")
+const connection= require("./dbConnection");
 connection();
 const carmodel=require("./Models/carmodel");
 app.use(express.json());
