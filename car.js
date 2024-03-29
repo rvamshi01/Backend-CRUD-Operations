@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose= require("mongoose");
-const app= express()
+const app= express();
 const connection= require("./dbConnection")
 connection();
 const carmodel=require("./Models/carmodel");
