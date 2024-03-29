@@ -3,9 +3,7 @@ const mongoose= require("mongoose")
 const app= express()
 const connection= require("./dbConnection")
 connection();
-const carmodel=require("./Models/carmodel")
-
-
+const carmodel=require("./Models/carmodel");
 app.use(express.json());
 
 app.get("/", async(req,res)=>{
